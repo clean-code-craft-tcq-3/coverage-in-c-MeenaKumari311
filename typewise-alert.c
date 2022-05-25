@@ -17,7 +17,8 @@ BreachType classifyTemperatureBreach (BreachType (*Classify()))
 {
  int lowerLimit = 0;
   int upperLimit = 0;
-return Classify();
+  BreachType type=Classify();
+return type;
  }
 
 
