@@ -13,10 +13,10 @@ typedef enum {
 } BreachType;
 
 BreachType inferBreach(double value, double lowerLimit, double upperLimit);
-BreachType classifyTemperatureBreach (BreachType (*Classify(double temperatureInC) ));
-BreachType PASSIVE_COOLING_BREACH_type(double temperatureInC);
-BreachType HI_ACTIVE_COOLING_type(double temperatureInC);
-BreachType MED_ACTIVE_COOLING_type(double temperatureInC);
+BreachType classifyTemperatureBreach (BreachType (*Classify));
+BreachType PASSIVE_COOLING_BREACH_type();
+BreachType HI_ACTIVE_COOLING_type();
+BreachType MED_ACTIVE_COOLING_type();
 
 typedef enum {
   TO_CONTROLLER,
@@ -28,8 +28,7 @@ typedef struct {
   char brand[48];
 } BatteryCharacter;
 
-void checkAndAlert(
-  AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
+void checkAndAlert( AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
 
 void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
