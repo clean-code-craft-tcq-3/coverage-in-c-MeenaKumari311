@@ -1,4 +1,5 @@
 #include "typewise-alert.h"
+#include <stdio.h>
 void checkAndAlert(  AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC)
  
 {
@@ -21,9 +22,11 @@ void sendToController(BreachType breachType) {
   printf("%x : %x\n", header, breachType);
 }
 
-void sendToEmail(BreachType breachType) {
+void sendToEmail(BreachType breachType)
+{
   const char* recepient = "a.b@c.com";
-  switch(breachType) {
+  switch(breachType)
+  {
     case TOO_LOW:
       printf("To: %s\n", recepient);
       printf("Hi, the temperature is too low\n");
@@ -35,3 +38,4 @@ void sendToEmail(BreachType breachType) {
     case NORMAL:
       break;
   }
+}
