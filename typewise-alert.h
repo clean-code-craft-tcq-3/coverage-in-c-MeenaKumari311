@@ -13,7 +13,7 @@ typedef enum {
 } BreachType;
 
 BreachType inferBreach(double value, double lowerLimit, double upperLimit);
-BreachType classifyTemperatureBreach (BreachType (*Classify(double temperatureInC) );
+BreachType classifyTemperatureBreach (BreachType (*Classify(double temperatureInC) ));
 BreachType PASSIVE_COOLING_BREACH(double temperatureInC);
 BreachType HI_ACTIVE_COOLING(double temperatureInC);
 BreachType MED_ACTIVE_COOLING(double temperatureInC);
