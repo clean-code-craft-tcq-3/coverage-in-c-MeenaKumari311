@@ -11,13 +11,13 @@ BreachType inferBreach(double value, double lowerLimit, double upperLimit) {
   return NORMAL;
 }
 
-BreachType classifyTemperatureBreach (BreachType (*Classify(temperatureInC) ) 
+BreachType classifyTemperatureBreach (BreachType (*Classify) 
 
 
 {
  int lowerLimit = 0;
   int upperLimit = 0;
-Return (Classify(temperatureInC));
+Return Classify();
  }
 
 
