@@ -3,17 +3,17 @@
 void checkAndAlert(  AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC)
  
 {
-  BreachType breachType = classifyTemperatureBreach( Classify(temperatureInC) );
+  //BreachType breachType = classifyTemperatureBreach( Classify(temperatureInC) );
 
-  switch(alertTarget)
- {
-    case TO_CONTROLLER:
-      sendToController(breachType);
-      break;
-    case TO_EMAIL:
-      sendToEmail(breachType);
-      break;
-  }
+  //switch(alertTarget)
+ //{
+   // case TO_CONTROLLER:
+     // sendToController(breachType);
+      //break;
+    //case TO_EMAIL:
+      //sendToEmail(breachType);
+      //break;
+  //}
 }
 
 
