@@ -4,7 +4,7 @@ void PASSIVE_COOLING_BREACH_type()
   int temperatureInC=0;
 int lowerLimit = 0;
 int upperLimit = 35;
-return inferBreach(temperatureInC, lowerLimit, upperLimit);
+//return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
 
 void HI_ACTIVE_COOLING_type()
@@ -12,7 +12,7 @@ void HI_ACTIVE_COOLING_type()
   int temperatureInC=0;
 int lowerLimit = 0;
 int upperLimit = 35;
-return inferBreach(temperatureInC, lowerLimit, upperLimit);
+//return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
 
 void MED_ACTIVE_COOLING_type()
@@ -20,5 +20,5 @@ void MED_ACTIVE_COOLING_type()
 int temperatureInC=0;
 int lowerLimit = 0;
 int upperLimit = 35;
-return inferBreach(temperatureInC, lowerLimit, upperLimit);
+//return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
