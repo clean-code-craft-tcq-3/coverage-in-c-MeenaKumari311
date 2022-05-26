@@ -10,7 +10,7 @@ Alert(breachType);
 
 
 //alert functions called with function pointer Alert(breachType)
-void sendToEmailForToo_Low((BreachType breachType)
+void sendToEmailForToo_Low(BreachType breachType)
 {
  const char* recepient = "a.b@c.com";
   printf("To: %s\n", recepient);
