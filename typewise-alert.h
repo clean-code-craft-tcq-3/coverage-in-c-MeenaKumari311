@@ -2,7 +2,7 @@
 
 double lowerLimit = 0;
 double upperLimit = 0;
-CoolingType breachType=NORMAL;
+BreachType breachType=NORMAL;
 
 typedef enum {
   PASSIVE_COOLING,
