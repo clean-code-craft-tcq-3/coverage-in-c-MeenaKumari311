@@ -3,7 +3,7 @@
 void checkAndAlert(  void (*Alert(BreachType breachType)), BatteryCharacter batteryChar, double temperatureInC)
  {
   //BreachType breachType = classifyTemperatureBreach( batteryChar.coolingType, temperatureInC );
-BreachType breachType=LOW;
+BreachType breachType=TOO_LOW;
 Alert(breachType);
  }
 
