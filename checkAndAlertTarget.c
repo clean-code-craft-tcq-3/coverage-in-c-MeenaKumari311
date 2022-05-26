@@ -4,7 +4,7 @@
 void checkAndAlert(  void (*Alert()),void (*DefineLimits()), double temperatureInC)
  {
 DefineLimits();
-breachType=inferBreachAndAlert(*Alert(), temperatureInC, lowerLimit, upperLimit);
+breachType=inferBreachAndAlert(Alert(), temperatureInC, lowerLimit, upperLimit);
 }
 
 BreachType inferBreachAndAlert(void (*Alert()), double value, double lowerLimit, double upperLimit)
