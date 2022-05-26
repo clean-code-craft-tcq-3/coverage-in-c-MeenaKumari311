@@ -12,11 +12,11 @@ BreachType inferBreachAndAlert( void (*Alert(), double value, double lowerLimit,
 	  if(value < lowerLimit)
 	{
 	return breachType;
-	Alert(breachType);
+	Alert();
 	 }
 	  if(value > upperLimit) 
 	{
 	return breachType;
-	Alert(breachType);
+	Alert();
 	  }
 }
