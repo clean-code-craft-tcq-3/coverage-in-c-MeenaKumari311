@@ -16,7 +16,7 @@ typedef enum {
   TOO_HIGH
 } BreachType;
 
-BreachType inferBreachAndAlert( void (*Alert()), double value, double lowerLimit, double upperLimit)
+BreachType inferBreachAndAlert( void (*Alert()), double value, double lowerLimit, double upperLimit);
 void DefineLimitsForPASSIVE_COOLING();
 void DefineLimitsForHI_ACTIVE_COOLING();
 void DefineLimitsForMED_ACTIVE_COOLING();
@@ -34,4 +34,4 @@ typedef struct {
   char brand[48];
 } BatteryCharacter;
 
-void checkAndAlert(  void (*Alert(BreachType breachType)),void (*DefineLimits()), double temperatureInC);
+void checkAndAlert(  void (*Alert()),void (*DefineLimits()), double temperatureInC);
