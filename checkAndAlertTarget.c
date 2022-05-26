@@ -1,32 +1,22 @@
 #include "typewise-alert.h"
 #include <stdio.h>
-void checkAndAlert(  void (*Alert(BreachType breachType)), BatteryCharacter batteryChar, double temperatureInC)
+
+void checkAndAlert(  void (*Alert()),void (*DefineLimits()), double temperatureInC)
  {
-  //BreachType breachType = classifyTemperatureBreach( batteryChar.coolingType, temperatureInC );
-BreachType breachType=TOO_LOW;
-Alert(breachType);
- }
-
-
-
-//alert functions called with function pointer Alert(breachType)
-void sendToEmailForToo_Low(BreachType breachType)
-{
- const char* recepient = "a.b@c.com";
-  printf("To: %s\n", recepient);
-  printf("Hi, the temperature is too low\n");
+DefineLimits();
+breachType=inferBreachAndAlert(void (*Alert()), temperatureInC, lowerLimit, upperLimit);
 }
 
-
-void sendToEmailForToo_High(BreachType breachType)
+BreachType inferBreachAndAlert( void (*Alert(), double value, double lowerLimit, double upperLimit)
 {
- const char* recepient = "a.b@c.com";
- printf("To: %s\n", recepient);
-      printf("Hi, the temperature is too high\n");
-}
-
-void sendToController(BreachType breachType)
-{
-  const unsigned short header = 0xfeed;
-  printf("%x : %x\n", header, breachType);
+	  if(value < lowerLimit)
+	{
+	return breachType;
+	Alert(breachType);
+	 }
+	  if(value > upperLimit) 
+	{
+	return breachType;
+	Alert(breachType);
+	  }
 }
