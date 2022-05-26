@@ -1,4 +1,5 @@
 #include "typewise-alert.h"
+#include <stdio.h>
 //alert functions called with function pointer Alert(breachType)
 void sendToEmail(BreachType breachType)
 {
