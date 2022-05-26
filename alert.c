@@ -1,6 +1,6 @@
 #include "typewise-alert.h"
 //alert functions called with function pointer Alert(breachType)
-sendToEmail((BreachType breachType)
+void sendToEmail(BreachType breachType)
 {
  const char* recepient = "a.b@c.com";
   printf("To: %s\n", recepient);
