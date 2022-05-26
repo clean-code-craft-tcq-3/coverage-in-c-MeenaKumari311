@@ -7,7 +7,7 @@ DefineLimits();
 breachType=inferBreachAndAlert(void (*Alert()), temperatureInC, lowerLimit, upperLimit);
 }
 
-BreachType inferBreachAndAlert( void (*Alert(), double value, double lowerLimit, double upperLimit)
+BreachType inferBreachAndAlert(void (*Alert()), double value, double lowerLimit, double upperLimit)
 {
 	  if(value < lowerLimit)
 	{
