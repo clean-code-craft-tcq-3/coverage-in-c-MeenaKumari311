@@ -17,6 +17,9 @@ BreachType classifyTemperatureBreach (void (*Classify()));
 void PASSIVE_COOLING_BREACH_type();
 void HI_ACTIVE_COOLING_type();
 void MED_ACTIVE_COOLING_type();
+void sendToEmailForToo_Low((BreachType breachType);
+void sendToEmailForToo_High(BreachType breachType);
+void sendToController(BreachType breachType);
 
 typedef enum {
   TO_CONTROLLER,
